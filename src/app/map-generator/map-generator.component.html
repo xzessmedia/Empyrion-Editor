@@ -1,0 +1,41 @@
+<h1 class="mat-h1">World Generator Settings:</h1>
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      World Settings
+    </mat-panel-title>
+    <mat-panel-description>
+      Base World Settings and Ranges for World Randomizer
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  
+  <mat-form-field>
+    <input matInput [(ngModel)]="maxNodes" type="number" placeholder="Max Nodes" value="5">
+  </mat-form-field>
+  
+  <mat-form-field>
+    <input matInput [(ngModel)]="maxPlayfields" type="number" placeholder="Max Playfields per System" value="5">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput [(ngModel)]="maxRandomX" type="number" placeholder="Max Random X">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput [(ngModel)]="maxRandomY" type="number" placeholder="Max Random Y">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput [(ngModel)]="maxRandomZ" type="number" placeholder="Max Random Z">
+  </mat-form-field>
+</mat-expansion-panel>
+<h1 class="mat-h1">Map Output:</h1>
+<mat-card>
+  <p class="mat-body-1" [innerHTML]="generatedMap">
+  </p>
+</mat-card>
+<p>
+  <button mat-raised-button color="primary" (click)="GenerateMap()">Generate a random Map</button>
+  <button mat-raised-button color="primary" (click)="GenerateOutput()">Generate Map Preview Output</button>
+  <button mat-raised-button color="primary" (click)="DownloadOutput()">Download Output</button>
+</p>
