@@ -1,6 +1,19 @@
 # EmpyrionEditor
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
+To install it, you need
+- NPM ( included in NodeJS https://nodejs.org/en/ )
+
+After you installed NPM / NodeJS, open a console, go to the root directory of this project and type:
+`npm install`
+
+After Installation is done, you can run the project with
+`ng serve`
+
+Or of you want to build it for production, you can use 
+`ng build --prod`
+
+
+Further details:
 
 ## Development server
 
